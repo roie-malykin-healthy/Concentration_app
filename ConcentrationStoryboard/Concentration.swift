@@ -12,6 +12,7 @@ class Concentration
     var cards = [Card]()
     let numOfPairsOfCards: Int
     
+    
     var indexOfOneAndOnlyOneFaceUpCard: Int?
     var flipCounter = 0
         

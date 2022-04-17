@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC604121280C15EA00597B25 /* CardTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC604120280C15EA00597B25 /* CardTheme.swift */; };
 		BCD570852806A2F8006B7E61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD570842806A2F8006B7E61 /* AppDelegate.swift */; };
 		BCD570872806A2F8006B7E61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD570862806A2F8006B7E61 /* SceneDelegate.swift */; };
 		BCD570892806A2F8006B7E61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD570882806A2F8006B7E61 /* ViewController.swift */; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BC604120280C15EA00597B25 /* CardTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTheme.swift; sourceTree = "<group>"; };
 		BCD570812806A2F8006B7E61 /* ConcentrationStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcentrationStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD570842806A2F8006B7E61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD570862806A2F8006B7E61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 		BCD570782806A2F8006B7E61 = {
 			isa = PBXGroup;
 			children = (
-				BC604120280C15EA00597B25 /* CardTheme.swift */,
 				BCD570832806A2F8006B7E61 /* ConcentrationStoryboard */,
 				BCD5709A2806A2F9006B7E61 /* ConcentrationStoryboardTests */,
 				BCD570A42806A2F9006B7E61 /* ConcentrationStoryboardUITests */,
@@ -270,7 +267,6 @@
 				BCD570892806A2F8006B7E61 /* ViewController.swift in Sources */,
 				BCEAEAEE2808207000A4A34F /* Concentration.swift in Sources */,
 				BCEAEAF02808215700A4A34F /* Card.swift in Sources */,
-				BC604121280C15EA00597B25 /* CardTheme.swift in Sources */,
 				BCD570852806A2F8006B7E61 /* AppDelegate.swift in Sources */,
 				BCD570872806A2F8006B7E61 /* SceneDelegate.swift in Sources */,
 			);

@@ -19,6 +19,7 @@ class ViewController: UIViewController {
      */
     func endGameView(){
         game = Concentration(numberOfPairsOfCards: numOfPairsOfCards)
+        emojiChoices = emojiLibrary[Int(arc4random_uniform(UInt32(emojiLibrary.count)))]
     }
     
     lazy var flipCount: Int = game.flipCounter {
@@ -67,8 +68,11 @@ class ViewController: UIViewController {
     
     
     
-    var emojiChoices: [String] = ["👻","🐍","🦇","🕸","⚡️","😶‍🌫️","😈","☠️"]
-    lazy var emojiChoices_copy = emojiChoices
+    var emojiLibrary: [[String]] = [["👻","🐍","🦇","🕸","⚡️","😶‍🌫️","😈","☠️"],["🐶","🐨","🦆","🦊","🐸","🐙","🪱","🦋"],["🍎","🍇","🍌","🥑","🍔","🍗","🍕","🍒"],["⚽️","🏈","🏀","🎱","🏉","🥏","🎾","⚾️"],
+        ["🚖","🚘","🚔","🚍","🚜","🚛","🛵","🚲"],
+        ["🇦🇺","🇨🇦","🇮🇱","🇵🇱","🇺🇦","🇹🇷","🏴󠁧󠁢󠁷󠁬󠁳󠁿","🇺🇸"]
+        ]
+    lazy var emojiChoices = emojiLibrary[Int(arc4random_uniform(UInt32(emojiLibrary.count)))]
     var emoji = [Int:String]()
     
     func emoji(for card: Card) -> String {
