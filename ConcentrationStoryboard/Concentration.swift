@@ -11,6 +11,7 @@ class Concentration
 {
     var cards = [Card]()
     let numOfPairsOfCards: Int
+    var revial_counter = [Int]()
     
     
     var indexOfOneAndOnlyOneFaceUpCard: Int?
@@ -18,7 +19,7 @@ class Concentration
         
     
     
-    func chooseCard(at index: Int) {
+    func chooseCard(at index: Int)  {
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyOneFaceUpCard , matchIndex != index {
                 // Check if cards match
@@ -50,6 +51,7 @@ class Concentration
         self.numOfPairsOfCards = numberOfPairsOfCards
         cards.shuffle()
         
+        revial_counter = Array(repeating: 0, count: numberOfPairsOfCards)
         
     }
     
