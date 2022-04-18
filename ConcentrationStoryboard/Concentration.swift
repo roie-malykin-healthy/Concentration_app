@@ -14,7 +14,27 @@ class Concentration
     var revial_counter = [Int]()
     
     
-    var indexOfOneAndOnlyOneFaceUpCard: Int?
+    var indexOfOneAndOnlyOneFaceUpCard: Int? {
+        get {
+            var foundIndex : Int?
+            for index in cards.indices {
+                if cards[index].isFaceUp{
+                    if foundIndex == nil{
+                        foundIndex = index
+                    }
+                    else{
+                        return nil
+                    }
+                }
+            }
+            return foundIndex
+        }
+        set {
+            for index in cards.indices {
+                cards[index].isFaceUp = (index == newValue) // Why newValue is ok?
+            }
+        }
+    }
     var flipCounter = 0
         
     
